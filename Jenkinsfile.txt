@@ -5,19 +5,19 @@ stages
 		stage('Build') 
 		{
 			steps{
-				echo "Building the Project.........."
+				git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
 			}
 		}
 stage('Test') 
 {
 steps{
-echo "Testing the Project.........."
+git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
 }
 }
 stage('Deploy') 
 {
 steps{
-echo "Deploying the Project.........."
+git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
 }
 }
 }
