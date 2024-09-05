@@ -1,3 +1,4 @@
+
 pipeline{
 agent any
 stages 
@@ -5,20 +6,21 @@ stages
 		stage('Build') 
 		{
 			steps{
-				git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
+				echo "Building the Project.........."
 			}
 		}
 stage('Test') 
 {
 steps{
-git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
+echo "Testing the Project.........."
 }
 }
 stage('Deploy') 
 {
 steps{
-git url: 'https://github.com/Rukmini2712/JenkinDeclarativeScriptedPipeline.git'
+echo "Deploying the Project.........."
 }
 }
 }
 }
+
